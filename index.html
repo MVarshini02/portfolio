@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website </title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/942cab3b07.js" crossorigin="anonymous"></script>
+
+    </head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logov.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Certifications</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact </a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi,I'm <span>Varshini</span><br> from GVPCEW</h1>
+            </div>
+        </div>
+    </div>
+    <!-------------about------------------>
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/me3.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                I'm <b>Medicharla Varshini </b> currently pursuing  Final year in Gayatri Vidya Parishad College of Engineering for Women in the branch of Computer Science & Engineering.I'm passionate about software development and eager to kickstart a career in the tech industry. With a hunger for learning and a drive to enhance skills.I'm enthusiastic on a quest to explore new opportunities and grow within the software field.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links "onclick="opentab('internship')">Internships</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br> <h3>C,C++,Java</h3></li>
+                        <li><span>Web Development</span><br><h3>HTML,CSS,Javascript</h3></li>
+                        <li><span>Operating System</span><br><h3>Windows</h3></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="internship">
+                    <ul>
+                        <li><span><b>Full Stack Developer</b></span><h2>V info Technologies</h2>May 2023-June 2023</li>
+                        <li><span><b>Java Developer</b></span><h2>Shaish info Solutions</h2>August 2022-October 2022</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024</span><br><b>B.Tech</b> -Gayatri Vidya Parishad College of Engineering for Women</li>
+                        <li><span>2020</span><br><b>Intermediate</b> -Aditya Junior College</li>
+                        <li><span>2018</span><br><b>SSC</b> -Vivekananda English Medium School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+<!------------certifications----------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Certifications</h1>
+        <div class="services-list">
+            <div>
+                <img src="images/wipro.png" >
+            </div>
+            <div>
+                <img src="images/Data Analytics course-1.png">  
+            </div>
+            <div>
+                <img src="images/nptel.jpg" >
+            </div>
+        </div>
+    </div>
+</div>
+<!---Hackathons-------------------------->
+<div id="hack">
+ <div class="container">
+        <h1 class="sub-title">Hackathons</h1>
+        <div class="hackathons">
+            <div>
+                <img src="images/code4tech-1.png">
+            </div>
+            <div>
+                <img src="images/Hack2skill-Certificate.png">
+                
+            </div>
+            <div>
+                <img src="images/aspire.jpg" >
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------------portfolio----------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class ="work-list">
+            <div class="work">
+                <img src="images/face.jpg">
+                <div class="layer">
+                    <h2>Attendance Managment Systtem Using FACE Recognition</h2>
+                  <p>A software application that automates attendance-taking using facial recognition technology.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/bank.jpg">
+                <div class="layer">
+                    <h2>Basic Banking System</h2>
+                    <p>
+                        Using this application we can transfer virtual money between multiple users and also record the banking transactions/Activites.
+                    </p>
+                        <a href="https://drive.google.com/file/d/163FByow9oZrJTP_n-yahtZASPMr93dVH/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div> 
+            <div class="work">
+                <img src="images/encrypt.jpg">
+                <div class="layer">
+                    <h3>Image Encryption & Decryption</h3>
+                    <p>
+                        Process to transform the image securely so that no unauthorized user can be able to decrypt the image. </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!--------contact---------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> mvarshinim02@gmail.com </p>
+            <p><i class="fa-solid fa-phone"></i>9550768229</p>
+            <div class="social-icons">
+                <a href="https://github.com/MVarshini02"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/varshini-medicharla-1a8572227"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://discord.com/channels/@me"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://instagram.com/varshini_m_318?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <a href="Medicharla_Varshini_Resume.pdf"  download class="btn btn2">Download my Resume</a>
+        </div>
+            <div class="contact-right">
+                <form action="https://formsubmit.co/chandinivarshini3121@gmail.com" method="POST"/>
+            <input type="text" name="Name" placeholder="Your name" required>
+            <input type="Email" name="Email" placeholder="Your email" required>
+            <input type="text" name="Subject" required placeholder="Subject">
+            <textarea name="Message" rows="6" required placeholder="Your Message"></textarea>
+            <input type="hidden" name="_captcha" value="false">
+            <button type="submit" class="btn btn2">Submit</button>
+                  </form>
+                <span id="msg"></span>
+            </div>
+
+        </div>
+
+    </div>
+    
+</div>
+
+
+
+
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname)
+    {
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove("active-tab");
+        }
+       event.currentTarget.classList.add("active-link");
+       document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right="0";
+    }
+    function closemenu(){
+        sidemeu.style.right="-200px";
+    }
+</script>
+
+
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxTDKzGP8ltaCk2Oj9ztKYpQVXQi0FksBqHGCf2yw7I1u_p6v2VpSBBesktVreADq3N/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => { 
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
